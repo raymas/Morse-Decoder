@@ -28,8 +28,11 @@ import librosa
 # And the display module for visualization
 import librosa.display
 
+# os for script path
+import os
+
 audio_path = librosa.util.example_audio_file()
-audio_path = "D:\Cours\Programming\Sound_treatment\SDRSharp_20180406_185920Z_144429460Hz_AF.wav"
+audio_path = os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'ressources')) + "\q.mp3"
 y, sr = librosa.load(audio_path)
 
 # Let's make and display a mel-scaled power (energy-squared) spectrogram
