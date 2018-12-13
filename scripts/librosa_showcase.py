@@ -28,7 +28,7 @@ import librosa
 # And the display module for visualization
 import librosa.display
 
-# os for script path
+# os for audio_path
 import os
 
 audio_path = librosa.util.example_audio_file()
